@@ -6,6 +6,11 @@
 
 Применим для нее преобразование Карунена — Лоэва. Метод используется для нормализации "отбеливания" данных.
 
+Вначале центрируем данные, чтобы вращение было вокруг центра всех точек
+```
+X = X-X.mean(axis=0)
+```
+
 Сингулярное разложение
 ![](https://raw.githubusercontent.com/okiochan/Karuen/master/formula/f1.gif)
 ковариационной матрицы 
@@ -16,6 +21,11 @@
 
 получим
 
-![](https://raw.githubusercontent.com/okiochan/Karuen/master/img/i2.png)
+![](https://raw.githubusercontent.com/okiochan/Karuen/master/img/i2.png
+
+В формуле, D - растянет выборку, а G - матрица поворота
+Мы можем, для примера, заменить  так ("уберем" параметр растяжения, оставим вместо него просто I) и мы видим, что G делает поворот
+
+![](https://raw.githubusercontent.com/okiochan/Karuen/master/img/i3.png
 
 Наша выборка будет лучше работать с различными методами обучения
