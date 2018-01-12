@@ -21,11 +21,11 @@ X = X-X.mean(axis=0)
 
 получим
 
-![](https://raw.githubusercontent.com/okiochan/Karuen/master/img/i2.png
+![]( https://raw.githubusercontent.com/okiochan/Karuen/master/img/i2.png
 
 В формуле, D - растянет выборку, а G - матрица поворота
 Мы можем, для примера, заменить  так ("уберем" параметр растяжения, оставим вместо него просто I) и мы видим, что G делает поворот
 
-![](https://raw.githubusercontent.com/okiochan/Karuen/master/img/i3.png
+![]( https://raw.githubusercontent.com/okiochan/Karuen/master/img/i3.png
 
 Наша выборка будет лучше работать с различными методами обучения
